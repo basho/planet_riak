@@ -1,1 +1,4 @@
-riak/output
+riak/output/*
+riak/*.tmplc
+riak/riak/*.tmplc
+planet/*.pyc
