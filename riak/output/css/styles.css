@@ -1,0 +1,240 @@
+/* Fonts Section */
+
+@font-face {
+    font-family: 'league';
+    src: url('../fonts/leaguegothic.eot');
+    src: local('League Gothic'), url('../fonts/leaguegothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'crimson';
+    src: url('../fonts/crimsonroman.eot');
+    src: local('Crimson'), url('../fonts/crimsonroman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'crimson';
+    src: url('../fonts/crimsonbold.eot');
+    src: local('Crimson'), url('../fonts/crimsonbold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'crimson';
+    src: url('../fonts/crimsonitalic.eot');
+    src: local('Crimson'), url('../fonts/crimsonitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'crimson';
+    src: url('../fonts/crimsonbolditalic.eot');
+    src: local('Crimson'), url('../fonts/crimsonbolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Reset Section */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	padding: 5px 0 0 18px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ;
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Real Styles*/
+
+body {
+    font-family: 'crimson', georgia, serif;
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'league', 'helvetica', arial, sans-serif;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 17px 0 0 0;
+}
+
+ul {
+    list-style-type: square;
+    line-height: 1.3;
+}
+
+strong {
+    font-family: 'league', georgia, serif;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.header {
+    margin: 0 auto;
+    width: 960px;
+    border-bottom: 3px solid #2d2d2d;
+}
+
+.subscribe-bg {
+    background: url('../images/subscribe-bg.png') right top no-repeat transparent;
+    width: 106px;
+    height: 18px;
+    cursor: pointer;
+    margin: 66px 0 0 0;
+}
+
+.subscribe-bg:hover {
+    background-position: right bottom;
+}
+
+.subscribe {
+    width: 106px;
+    height: 18px;
+    background: url('../images/subscribe.png') left top no-repeat transparent;
+}
+
+.titleimg {
+    background: url('../images/logo.jpg') left bottom no-repeat transparent;
+    height: 53px;
+    width: 310px;
+    padding: 31px 0 0 0;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 25px auto 0;
+    background: #fff;
+}
+
+.leftColumn {
+    width: 657px;
+    height: auto;
+    padding: 0 18px 0 0;
+    background: #fff;
+    text-align: left;
+}
+
+.rightColumn {
+    width: 266px;
+    border-left: 1px dashed #878787;
+    height: auto;
+    padding: 0 0 40px 18px;
+    background: #fff;
+    text-align: left;
+}
+
+.rightColumn a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.rightColumn a:hover {
+    color: #66A19D;
+}
+
+.rightColumn ul {
+    padding: 10px 0 20px 18px;
+}
+
+.post {
+    line-height: 1.2;
+    border-bottom: 1px dashed #878787;
+    padding-bottom: 30px;
+}
+
+.post a {
+    color: #66a19d;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post a.title {
+    color: #2d2d2d;
+}
+
+.post a.title:hover {
+    color: #66a19d;
+    text-decoration: none;
+}
+
+.post p {
+    margin: 0 0 20px;
+}
+
+.post p.postMeta {
+    margin: 0;
+    line-height: 1;
+}
+
+.content ol {
+    list-style-type: decimal;
+}
+
+.content li {
+    padding: 10px 0 0;
+}
+
+
+
+
+
+
+
+.block {display: block;}
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.clear {clear:both;}
+.bold {font-weight: bold;}
+
