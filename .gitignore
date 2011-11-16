@@ -1,5 +1,6 @@
 riak/output/*.html
 riak/output/*.xml
+riak/cache/
 riak/*.tmplc
 riak/riak/*.tmplc
 planet/*.pyc
