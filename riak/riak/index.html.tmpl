@@ -15,27 +15,24 @@
     <title><TMPL_VAR name></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
-    <!-- <link rel="stylesheet" href="planet.css" type="text/css" media="all"> -->
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
     <TMPL_IF feedtype>
-        <!--<link rel="alternate" href='<TMPL_VAR feed ESCAPE="HTML">' title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">-->
-        <link rel="alternate" href='rss20.xml' type="application/xml">
+        <link rel="alternate" href='<TMPL_VAR feed ESCAPE="HTML">' title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
     </TMPL_IF>
 </head>
 
 <body>
     <div class="header">
-        <!--<a class="block floatRight subscribe-bg" href='<TMPL_VAR feed ESCAPE="HTML">'><span class="block subscribe"></span></a>-->
-        <a class="block floatRight subscribe-bg" href='rss20.xml'><span class="block subscribe"></span></a>
+        <a class="block floatRight subscribe-bg" href='<TMPL_VAR feed ESCAPE="HTML">'><span class="block subscribe"></span></a>
         <div class="titleimg"></div>
     </div>
     
     <div class="wrapper">
         <div class="leftColumn floatLeft">
-            <!--<h1 class="tmplvarname"><TMPL_VAR name></h1>-->
             
             <TMPL_LOOP Items>
-                <!--
+            
+                <!-- Save this in case we want to use these variables in the future
                 <TMPL_IF new_date>
                     <TMPL_UNLESS __FIRST__>
                         ### End 
@@ -53,14 +50,7 @@
                         ### End 
                         <div class="channelgroup"></div>
                     </TMPL_UNLESS>
-                    <div class="channelgroup">
-            
-                        ### Planet provides template variables for *all* configuration options for
-                        ### the channel (and defaults), even if it doesn't know about them.  We
-                        ### exploit this here to add hackergotchi faces to our channels.  Planet
-                        ### doesn't know about the "face", "facewidth" and "faceheight" configuration
-                        ### variables, but makes them available to us anyway.
-                        
+                    <div class="channelgroup">                  
                         
                         <h3><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a></h3>
                         <TMPL_IF channel_face>
@@ -117,7 +107,7 @@
             </ul>
             <a class="bold" href="mailto:mark@basho.com?subject=Add my site to Planet Riak&body=Title: %0A%0aFeed: %0A%0AAuthor Name: %0A%0ASite Url:%0A%0A">Add your site?</a>
             
-            <!--
+            <!-- Save this in case we want to use these variables in the future
             <p>
                 <strong>Last updated:</strong><br>
                 <TMPL_VAR date><br>
