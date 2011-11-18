@@ -1,0 +1,23 @@
+* Planet Riak Planet Setup
+** If you would like to setup planet and view it you will need python and the bsddb3 
+module. Once installed you can run python planet.py riak/riak/config.ini to generate
+the site. It will generate a static site in riak/output/
+** If you just want to add a new blog edit riak/riak/config.ini and add a block similar to
+this one to the bottom.
+[http://seancribbs.com/atom.xml]
+name = Sean Cribbs - Digital Renaissance Man
+
+
+* Below is the original readme
+Planet
+------
+
+Planet is a flexible feed aggregator. It downloads news feeds published by
+web sites and aggregates their content together into a single combined feed,
+latest news first.
+
+It uses Mark Pilgrim's Universal Feed Parser to read from RDF, RSS and Atom
+feeds; and Tomas Styblo's templating engine to output static files in any
+format you can dream up.
+
+Keywords: feed, blog, aggregator, RSS, RDF, Atom, OPML, Python
